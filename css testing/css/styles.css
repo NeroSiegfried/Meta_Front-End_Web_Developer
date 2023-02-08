@@ -126,7 +126,11 @@ li>a:hover{
     height: auto;
     margin: auto;
 }
-.footer{
+.footer, .copyright{
     text-transform: none;
     color: white;
+}
+
+.copyright{
+    float: right;
 }
