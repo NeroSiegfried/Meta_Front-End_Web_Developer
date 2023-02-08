@@ -1,12 +1,136 @@
-#photo {
-    border: 2px;
+body{
+    background-color: blanchedalmond;
+    font-family: system-ui, sans-serif;
+    text-transform: uppercase;
 }
-div > h1 {
-    color: blue;
+
+.logo{
+    display: block;
+    width:20vw;
+    height: auto;
+    margin: auto;
 }
-h2 {
-    color: grey;
+
+.flexbox{
+    background-color: #26877f;
+    display: flex;
+    flex: 1 1 0;
+    justify-content: space-between;
+    
 }
-div {
-    margin: 4px;
+
+nav li{
+    padding: 10px;
+    list-style: none;
+    flex: 1 1 auto;
+    text-align: center;
+    position: relative;
+    right: 25px;
+}
+
+a:link{
+    text-decoration: none;
+    color:white;
+}
+
+.gridbox{
+    display: grid;
+    grid-template: 'promo promo promo'
+    'grid1 grid2 grid3';
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+    min-height: 0px;
+    min-width: 0px;
+}
+
+.center-text{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.promo{
+    grid-area: promo;
+    overflow: hidden;
+    min-width: 0px;
+}
+.promo img{
+    width: 100%;
+    height: 30vw;
+    object-fit: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.middle{
+    font-size: 8vw;
+    position: relative;
+    bottom: 19vw;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    opacity: 0;
+    text-align: center;
+}
+.grid1, .grid2, .grid3{
+    position: relative;
+    bottom: 8vw;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+}
+.grid1{
+    grid-area: grid1;
+}
+.grid2{
+    grid-area: grid2;
+}
+
+.grid3{
+    grid-area: grid3;
+}
+
+.grid1 img, .grid2 img, .grid3 img{
+    width: 100%;
+    height: 30vw;
+    object-fit: cover;
+    min-width: 0px;
+}
+main>div>.center-text{
+    padding:15px;
+}
+.promo:hover .middle{
+    opacity: 0.8;
+    transition: 0.5s linear;
+}
+.promo:hover img{
+    filter: brightness(90%) blur(2px);
+    transition: 0.5s linear;
+}
+
+.grid1:hover, .grid2:hover, .grid3:hover{
+    background-color: rgba(122, 157, 92, 0.315);
+    transition: 0.5s;
+}
+
+li>a:hover{
+    color:rgb(229, 255, 0);
+    transition: 0.5s;
+}
+
+.flex{
+    flex: 1 1 0;
+    padding: 15px;
+    align-self: center;
+}
+.icon{
+    display: block;
+    width:8vw;
+    height: auto;
+    margin: auto;
+}
+.footer, .copyright{
+    text-transform: none;
+    color: white;
+}
+
+.copyright{
+    float: right;
 }
