@@ -95,7 +95,7 @@ a:link{
     object-fit: cover;
     min-width: 0px;
 }
-main>div>.center-text{
+main .center-text{
     padding:15px;
 }
 .promo:hover .middle{
